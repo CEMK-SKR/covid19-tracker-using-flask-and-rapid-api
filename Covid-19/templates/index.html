@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <title>Covid-19</title>
 </head>
@@ -83,13 +84,40 @@
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="inputPassword4" placeholder="Name">
+                <!-- <input type="text" class="form-control" id="inputPassword4" placeholder="Name"> -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary  dropdown-toggle customWidth" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      India
+                    </button>
+                    <ul class="dropdown-menu customWidth">
+                        <li><a class="dropdown-item" href="#">India</a></li>
+                      </ul>
+                  </div>
             </div>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="inputCity" placeholder="City">
+                <div class="dropdown">
+                    <button class="btn btn-secondary  dropdown-toggle customWidth" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      City
+                    </button>
+                    <ul class="dropdown-menu customWidth">
+                        <li><a class="dropdown-item" href="#">Regular link</a></li>
+                        <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                      </ul>
+                  </div>
             </div>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="inputState" placeholder="State">
+                <!-- <input type="text" class="form-control" id="inputState" placeholder="State"> -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary  dropdown-toggle customWidth" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      State
+                    </button>
+                    <ul class="dropdown-menu customWidth">
+                        <li><a class="dropdown-item" href="#">Regular link</a></li>
+                        <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                      </ul>
+                  </div>
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-outline-success">Get Report</button>
