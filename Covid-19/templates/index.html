@@ -15,6 +15,32 @@
 </head>
 
 <body>
+    <!-- NavBar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Covid-19</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Or Call at +91-7044731856">
+                            Contact Us
+                        </button>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- Accordion Start-->
     <div class="container my-2">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -78,23 +104,34 @@
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Number 3
+                        <strong>Prevention Tips</strong>
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing 
-                        elit. Doloribus nulla sit suscipit libero expedita 
-                        facilis magni praesentium ex ab quidem.
+                        <ul class="card-text list-group">
+                            <li class="list-group-item list-group-item-dark">Wash your hands with soap and water for at least 20 seconds. If soap and water are not available, use a hand sanitizer
+                            that contains at least 60% alcohol.</li>
+                            <li class="list-group-item list-group-item-dark">Avoid close contact with people outside your home. Stay at least 6 feet (about 2 arms’ length) from others.</li>
+                            <li class="list-group-item list-group-item-dark">Wear a mask in public, even if you don’t feel sick. The make cover will help protect others in case you are infected.</li>
+                            <li class="list-group-item list-group-item-dark">Cover your coughs and sneezes with a tissue or the inside of your elbow. Throw used tissues in the trash and then wash
+                            your hands with soap and water for at least 20 seconds.</li>
+                            <li class="list-group-item list-group-item-dark">Clean and disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops,
+                            handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
+                            <li class="list-group-item list-group-item-dark">Stay home if you have symptoms such as fever, cough, shortness of breath.</li>
+                            <li class="list-group-item list-group-item-dark">Seek emergency medical care if you develop severe symptoms, such as trouble breathing, chest pain, new confusion,
+                            inability to wake or stay awake, or pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone.​</li>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Accordion End  -->
 
+    <!-- Form Start -->
     <div class="container mt-5">
-        <h1 class="text-center">COVID-19 STATS</h1>
+        <h1 class="text-center custom-border">COVID-19 STATS</h1>
         <br>
         <form class="row g-3">
             <div class="col-md-6">
@@ -140,13 +177,15 @@
                 </div>
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-outline-success">Get Report</button>
+                <button type="submit" class="btn btn-outline-dark">Get Report</button>
             </div>
         </form>
     </div>
+    <!-- Form End -->
 
+    <!-- Results Start -->
     <div class="container mt-5">
-        <h1><strong>Results</strong></h1>
+        <h1 class="text-center custom-border mb-5"><strong>Results</strong></h1>
         <div class="row">
             <div class="card text-white bg-dark me-5 col-md-2">
                 <div class="card-header">Header</div>
@@ -190,7 +229,8 @@
             </div>
         </div>
     </div>
-
+    <!-- Results End -->
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 

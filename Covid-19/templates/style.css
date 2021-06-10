@@ -3,5 +3,8 @@
     width: 100%;
 }
 .custom-height{
-    max-height: 80vh;
+    max-height: 90vh;
+}
+.custom-border{
+    border-bottom: 3px solid;
 }
