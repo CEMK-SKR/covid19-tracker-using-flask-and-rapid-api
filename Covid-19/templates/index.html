@@ -135,9 +135,9 @@
     <div class="container mt-5 form-div">
         <h1 class="text-center custom-border">COVID-19 STATS</h1>
         <br>
-        <form class="row g-3">
+        <form class="row g-3" action="http://localhost:5000/" method="post">
             <div class="col-md-6">
-                <input class="form-control" id="inputEmail4" placeholder="Give input">
+                <input class="form-control" id="input_country" placeholder="Give input" name= "input_name">
             </div>
             <div class="col-md-6">
                 <!-- <input type="text" class="form-control" id="inputPassword4" placeholder="Name"> -->
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-outline-dark">Get Report</button>
+                <button type = "submit" value = "submit" class="btn btn-outline-dark">Get Report</button> 
             </div>
         </form>
     </div>
