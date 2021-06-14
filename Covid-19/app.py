@@ -10,11 +10,16 @@ def hello_world():
 def getCountryName():
    if request.method == 'POST':
       user = request.form['input_name']
-      print(user)
-      A = getApi.Api()
-      user_data=A.get_report(user=user)
-      print(user_data[0])
-      return render_template('index.html', user_data=user_data[0])
+      try:
+        if(user != None):
+          print(user)
+          A = getApi.Api()
+          user_data=A.get_report(user=user)
+          print(user_data[0])
+          return render_template('index.html', user_data=user_data[0])
+      except:
+          return render_template('index.html')
+      
 
 if __name__ == "__main__":
     app.run(debug=True)
