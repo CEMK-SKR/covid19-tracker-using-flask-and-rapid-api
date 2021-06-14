@@ -186,41 +186,44 @@
     <!-- Form End -->
 
     <!-- Results Start -->
+    {% if user_data != null %}
+      
     <div class="container mt-5 result-div">
         <h1 class="text-center custom-border mb-5">RESULTS</h1>
         <div class="row">
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
                 <div class="card-header text-center"><h2><strong>Country</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center"><span>{{ user_data[0]['country'] }}</span></h5>
+                    <h5 class="card-title text-center"><span>{{ user_data['country'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
                 <div class="card-header text-center"><h2><strong>Confirmed</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center" style="color: crimson;"><span>{{ user_data[0]['confirmed'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: crimson;"><span>{{ user_data['confirmed'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
                 <div class="card-header text-center"><h2><strong>Recovered</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center" style="color: rgb(83, 218, 83)"><span>{{ user_data[0]['recovered'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: rgb(83, 218, 83)"><span>{{ user_data['recovered'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
                 <div class="card-header text-center"><h2><strong>Critical</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center" style="color: yellow;"><span>{{ user_data[0]['critical'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: yellow;"><span>{{ user_data['critical'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark col-md-2 result-item-div">
                 <div class="card-header text-center"><h2><strong>Deaths</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center" style="color: rgba(184, 181, 181, 0.596);"><span>{{ user_data[0]['deaths'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: rgba(184, 181, 181, 0.596);"><span>{{ user_data['deaths'] }}</span></h5>
                 </div>
             </div>
         </div>
     </div>
+    {% endif %}
     <!-- Results End -->
     
 

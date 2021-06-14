@@ -14,7 +14,7 @@ def getCountryName():
       A = getApi.Api()
       user_data=A.get_report(user=user)
       print(user_data[0])
-      return render_template('index.html', user_data=user_data)
+      return render_template('index.html', user_data=user_data[0])
 
 if __name__ == "__main__":
     app.run(debug=True)
