@@ -2,7 +2,7 @@ import requests
 import json
 
 class Api:
-    def __init__(self)->None:
+    def __init__(self):
         pass
     def get_report(self,user):
         url = "https://covid-19-data.p.rapidapi.com/country"
@@ -16,7 +16,7 @@ class Api:
 
         response = requests.request("GET", url, headers=headers, params=querystring)
 
-        print(response.text)
+        return response.text
 
 # def xyz():
 #     A = Api()
