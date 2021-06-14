@@ -48,7 +48,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
+                        aria-expanded="true" aria-controls="collapseOne">
                         <strong>Coronavirus Disease 2019 (COVID-19)</strong>
                     </button>
                 </h2>
@@ -137,17 +137,17 @@
         <br>
         <form class="row g-3" action="http://localhost:5000/" method="post">
             <div class="col-md-6">
-                <input class="form-control" id="input_country" placeholder="Give input" name= "input_name">
+                <input class="form-control" id="input_country" placeholder="Type your Country" name= "input_name">
             </div>
             <div class="col-md-6">
                 <!-- <input type="text" class="form-control" id="inputPassword4" placeholder="Name"> -->
                 <div class="dropdown">
                     <button class="btn btn-secondary  dropdown-toggle custom-width" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        India
+                        Coming Soon
                     </button>
                     <ul class="dropdown-menu custom-width">
-                        <li><a class="dropdown-item" href="#">India</a></li>
+                        <li><a class="dropdown-item" href="#">Coming Soon</a></li>
                     </ul>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                 <div class="dropdown">
                     <button class="btn btn-secondary  dropdown-toggle custom-width" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        City
+                        Coming Soon
                     </button>
                     <ul class="dropdown-menu custom-width">
                         <li><a class="dropdown-item" href="#">Regular link</a></li>
@@ -169,7 +169,7 @@
                 <div class="dropdown">
                     <button class="btn btn-secondary  dropdown-toggle custom-width" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        State
+                        Coming Soon
                     </button>
                     <ul class="dropdown-menu custom-width">
                         <li><a class="dropdown-item" href="#">Regular link</a></li>
@@ -190,33 +190,33 @@
         <h1 class="text-center custom-border mb-5">RESULTS</h1>
         <div class="row">
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header"><h2><strong>Country</strong></h2></div>
+                <div class="card-header text-center"><h2><strong>Country</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title"><span>{{ user_data[0]['country'] }}</span></h5>
+                    <h5 class="card-title text-center"><span>{{ user_data[0]['country'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header"><h2><strong>Confirmed</strong></h2></div>
+                <div class="card-header text-center"><h2><strong>Confirmed</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title"><span>{{ user_data[0]['confirmed'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: crimson;"><span>{{ user_data[0]['confirmed'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header"><h2><strong>Recovered</strong></h2></div>
+                <div class="card-header text-center"><h2><strong>Recovered</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title"><span>{{ user_data[0]['recovered'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: rgb(83, 218, 83)"><span>{{ user_data[0]['recovered'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header"><h2><strong>Critical</strong></h2></div>
+                <div class="card-header text-center"><h2><strong>Critical</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title"><span>{{ user_data[0]['critical'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: yellow;"><span>{{ user_data[0]['critical'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark col-md-2 result-item-div">
-                <div class="card-header"><h2><strong>Deaths</strong></h2></div>
+                <div class="card-header text-center"><h2><strong>Deaths</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title"><span>{{ user_data[0]['deaths'] }}</span></h5>
+                    <h5 class="card-title text-center" style="color: rgba(184, 181, 181, 0.596);"><span>{{ user_data[0]['deaths'] }}</span></h5>
                 </div>
             </div>
         </div>
@@ -251,22 +251,22 @@
   
       <!-- Right -->
       <div>
-        <a href="#" class="me-4 text-reset">
+        <a href="#" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="#" class="me-4 text-reset">
+        <a href="#" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="#" class="me-4 text-reset">
+        <a href="#" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-google"></i>
         </a>
-        <a href="#" class="me-4 text-reset">
+        <a href="#" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="me-4 text-reset">
+        <a href="#" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" class="me-4 text-reset">
+        <a href="#" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-github"></i>
         </a>
       </div>
