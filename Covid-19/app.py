@@ -11,7 +11,6 @@ def getCountryName():
    if request.method == 'POST':
       user = request.form['input_name']
       try:
-        if(user != None):
           print(user)
           A = getApi.Api()
           user_data=A.get_report(user=user)
