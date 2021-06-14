@@ -48,7 +48,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
+                        aria-expanded="false" aria-controls="collapseOne">
                         <strong>Coronavirus Disease 2019 (COVID-19)</strong>
                     </button>
                 </h2>
@@ -190,33 +190,33 @@
         <h1 class="text-center custom-border mb-5">RESULTS</h1>
         <div class="row">
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header">Header</div>
+                <div class="card-header"><h2><strong>Country</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
+                    <h5 class="card-title"><span>{{ user_data[0]['country'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header">Header</div>
+                <div class="card-header"><h2><strong>Confirmed</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title">Dark card title</h5>
+                    <h5 class="card-title"><span>{{ user_data[0]['confirmed'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header">Header</div>
+                <div class="card-header"><h2><strong>Recovered</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title">Dark card title</h5>
+                    <h5 class="card-title"><span>{{ user_data[0]['recovered'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark me-5 col-md-2 result-item-div">
-                <div class="card-header">Header</div>
+                <div class="card-header"><h2><strong>Critical</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title">Dark card title</h5>
+                    <h5 class="card-title"><span>{{ user_data[0]['critical'] }}</span></h5>
                 </div>
             </div>
             <div class="card text-white bg-dark col-md-2 result-item-div">
-                <div class="card-header">Header</div>
+                <div class="card-header"><h2><strong>Deaths</strong></h2></div>
                 <div class="card-body">
-                    <h5 class="card-title">Dark card title</h5>
+                    <h5 class="card-title"><span>{{ user_data[0]['deaths'] }}</span></h5>
                 </div>
             </div>
         </div>

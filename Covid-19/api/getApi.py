@@ -16,7 +16,7 @@ class Api:
 
         response = requests.request("GET", url, headers=headers, params=querystring)
 
-        return response.text
+        return json.loads(response.text)
 
 # def xyz():
 #     A = Api()
