@@ -13,10 +13,15 @@
     padding: 20px 0 20px;
 }
 .result-div{
-    min-height: 60vh;
+    min-height: 20vh;
     padding: 20px 0 20px;
     align-items: center;
 }
 .result-item-div{
     padding: 10px 0 10px;
+}
+.card{
+    margin-right: 10px !important;
+    padding-right: 15px !important;
+    border-radius: 30% !important;
 }

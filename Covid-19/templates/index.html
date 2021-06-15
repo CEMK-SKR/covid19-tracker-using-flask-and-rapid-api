@@ -11,6 +11,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="fontawsome.css"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome-free-5.15.3-web/css/all.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
     <style>
       df-messenger {
@@ -38,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="https://github.com/orgs/ChatbotCEMK/people">About Us</a>
+                        <a class="nav-link active" aria-current="page" href="#!">About Us</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a href="#footer"><button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -145,7 +146,7 @@
     <div class="container mt-5 form-div">
         <h1 class="text-center custom-border">COVID-19 STATS</h1>
         <br>
-        <form class="row g-3" action="https://covid19-tracker-sk-rit.herokuapp.com/" method="post">
+        <form class="row g-3" action="http://localhost:5000/" method="post">
             <div class="col-md-6">
                 <input class="form-control" id="input_country" placeholder="Type your Country" name= "input_name">
             </div>
@@ -241,7 +242,6 @@
     <script>
       alert("Please use Desktop-Site for Mobile Users")
     </script>
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -249,7 +249,7 @@
     -->
 </body>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger intent="WELCOME" chat-title="HotBot" agent-id="9d210f8f-8c09-490a-beb9-5bef9666fa08" language-code="en">
+<df-messenger intent="WELCOME" chat-title="Help" agent-id="9d210f8f-8c09-490a-beb9-5bef9666fa08" language-code="en">
 </df-messenger>
     <!-- Footer -->
 <footer class="text-center text-lg-start bg-dark text-muted" id="footer">
@@ -280,7 +280,7 @@
         <a href="#!" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/orgs/ChatbotCEMK/" class="me-4 text-reset" style="text-decoration: none;">
+        <a href="https://github.com/orgs/CEMK-SKR/" class="me-4 text-reset" style="text-decoration: none;">
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -376,7 +376,6 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
   
 
