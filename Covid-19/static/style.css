@@ -1,0 +1,22 @@
+
+.custom-width{
+    width: 100%;
+}
+.custom-height{
+    max-height: 90vh;
+}
+.custom-border{
+    border-bottom: 3px solid;
+}
+.form-div{
+    /* min-height: 80vh; */
+    padding: 20px 0 20px;
+}
+.result-div{
+    min-height: 60vh;
+    padding: 20px 0 20px;
+    align-items: center;
+}
+.result-item-div{
+    padding: 10px 0 10px;
+}
